@@ -41,5 +41,4 @@ Because this repository contains multiple isolated environments, **dependencies 
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/jp-software-dev/practicas-fullstack.git](https://github.com/jp-software-dev/practicas-fullstack.git)
-   cd practicas-fullstack
+   git clone https://github.com/jp-software-dev/fullstack-practice.git
