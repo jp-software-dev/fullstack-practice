@@ -31,7 +31,7 @@ To maintain isolation between different runtime environments and package manager
 ## 💻 Tech Stack Highlights
 
 * **Frontend:** HTML5, CSS3, JavaScript (ES6+), TypeScript, React, Angular, Bootstrap, Tailwind CSS.
-* **Backend:** Node.js, NestJS, PHP, Laravel, Java, C#, Flask.
+* **Backend:** Node.js, NestJS, PHP, Laravel, Java, Flask.
 * **Databases:** MySQL, SQLite.
 * **Version Control & Tooling:** Git, GitHub, npm, Composer.
 
