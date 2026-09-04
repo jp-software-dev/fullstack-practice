@@ -1,29 +1,65 @@
-# Node.js / React / Angular / Nest / TypeScript / Vue
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# Laravel / PHP
-vendor/
+# ----------------------------------------------------------------------
+# Credenciales y Archivos Sensibles (¡CRÍTICO!)
+# ----------------------------------------------------------------------
 .env
+.env.*
+*.pem
+*.key
+*.cert
+secrets.json
+credentials.json
+auth.json
+*.log
 
+# ----------------------------------------------------------------------
+# Node.js / TS / React / Angular / Nest / Vue
+# ----------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+out/
+coverage/
+.angular/
+.next/
+.nuxt/
+
+# ----------------------------------------------------------------------
+# PHP / Laravel
+# ----------------------------------------------------------------------
+vendor/
+Homestead.json
+Homestead.yaml
+storage/*.key
+
+# ----------------------------------------------------------------------
 # Java
+# ----------------------------------------------------------------------
 *.class
 *.jar
 *.war
+*.ear
 target/
 .mvn/
+.gradle/
+build/
 
-# C# / .NET
-bin/
-obj/
-
+# ----------------------------------------------------------------------
 # Entornos Virtuales (Python/Flask)
+# ----------------------------------------------------------------------
 venv/
 env/
 __pycache__/
+*.py[cod]
+*$py.class
+pip-log.txt
 
+# ----------------------------------------------------------------------
 # Archivos del Sistema Operativo y Editores
+# ----------------------------------------------------------------------
 .DS_Store
+Thumbs.db
 .vscode/
 .idea/
