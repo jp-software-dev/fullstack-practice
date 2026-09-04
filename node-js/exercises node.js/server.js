@@ -15,11 +15,15 @@
 
 const http = require('http');
 
+// Definimos el puerto en el que el servidor escuchará las peticiones
 const PORT = 3000;
 
+// Creamos el servidor HTTP
 const server = http.createServer((req, res) => {
+    // Configuramos la cabecera de la respuesta para indicar que es JSON y UTF-8
     res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
 
+    // Creamos un objeto con la información que queremos enviar en la respuesta
     const responseData = {
         status: 'success',
         message: "¡Hola Mundo desde el backend con Node.js!",
@@ -27,9 +31,11 @@ const server = http.createServer((req, res) => {
         timestamp: new Date().toISOString() 
     };
 
+    // Enviamos la respuesta al cliente en formato JSON
     res.end(JSON.stringify(responseData, null, 2))
 });
 
+// Iniciamos el servidor y escuchamos en el puerto definido
 server.listen(PORT, () => {
     console.log(`Servidor backend corriendo en http://localhost:${PORT}`);
 });
