@@ -1,0 +1,23 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: 'segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    border-radius: 12px;
+}
+
+/* Estilos para la tabla */
+.table th {
+    font-weight: 600;
+    color: #495057;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Estilos para los botones */
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    font-weight: 500;
+}
