@@ -22,6 +22,10 @@
                     <div class="card-body">
                         <h5 class="card-title mb-4">Registrar Componente</h5>
                         <form id="product-form">
+                            
+                            <!-- Campo oculto agregado para guardar el ID al editar -->
+                            <input type="hidden" id="editProductId" value="">
+                            
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nombre del producto</label>
                                 <input type="text" class="form-control" id="name" placeholder="Ej. Memoria RAM 16GB" required>
@@ -30,7 +34,10 @@
                                 <label for="price" class="form-label">Precio (USD)</label>
                                 <input type="number" class="form-control" id="price" placeholder="Ej. 85" required>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100">Añadir al Inventario</button>
+                            
+                            <!-- ID agregado al botón -->
+                            <button type="submit" id="submitBtn" class="btn btn-primary w-100">Añadir al Inventario</button>
+                            
                         </form>
                     </div>
                 </div>
