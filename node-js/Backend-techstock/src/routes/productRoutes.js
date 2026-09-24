@@ -12,5 +12,8 @@ router.post('/', productController.createProduct);
 // Ruta para eliminar un producto mediante su identificador
 router.delete('/:id', productController.deleteProduct);
 
+// Ruta para modificar un producto existente mediante su identificador
+router.put('/:id', productController.updateProduct);
+
 // Exportar el enrutador
 module.exports = router;
