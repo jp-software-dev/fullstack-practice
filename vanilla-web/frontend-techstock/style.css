@@ -21,3 +21,13 @@ body {
     border: none;
     font-weight: 500;
 }
+
+/* Separación para los botones de acción en la tabla */
+.table .btn {
+    margin-right: 8px;
+}
+
+/* Quita el margen del último botón para mantener la alineación a la derecha */
+.table .btn:last-child {
+    margin-right: 0;
+}
