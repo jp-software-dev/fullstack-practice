@@ -49,8 +49,30 @@ const deleteProduct = (req, res) => {
     });
 };
 
+// Actualizar un producto existente (UPDATE)
+const updateProduct = (req, res) => {
+    const { id } = req.params;
+    const { name, price } = req.body;
+    
+    const index = products.findIndex(p => p.id === parseInt(id));
+
+    if (index === -1) {
+        return res.status(404).json({ error: 'Producto no encontrado' });
+    }
+    if (!name || !price) {
+        return res.status(400).json({ error: 'Nombre y precio son obligatorios' });
+    }
+
+    // Actualizar los datos
+    products[index] = { id: parseInt(id), name, price: Number(price) };
+
+    res.status(200).json({ status: 'success', data: products[index] });
+};
+
+// Este bloque debe ir siempre al final e incluir todas tus funciones
 module.exports = {
     getProducts,
     createProduct,
-    deleteProduct
+    deleteProduct,
+    updateProduct
 };
