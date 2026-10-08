@@ -16,7 +16,7 @@
  * - Espacial: O(n) -> Almacenamos elementos unicos en memoria.
  */
 
-export class Solution {
+export class S1 {
 
     hasDuplicate(nums: number[]): boolean {
 

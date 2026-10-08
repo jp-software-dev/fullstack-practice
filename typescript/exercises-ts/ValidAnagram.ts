@@ -19,7 +19,7 @@
  * - Espacial: O(1) -> Aunque usamos un Map, el número máximo de claves se limita a las letras minúsculas del alfabeto inglés, por lo que el espacio en memoria no crece infinitamente y se considera constante[cite: 2].
  */
 
-class Solution {
+class S2 {
 
     isAnagram(s:string, t:string): boolean {
   if(s.length !== t.length){
